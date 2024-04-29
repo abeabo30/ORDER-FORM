@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bite & Order | Order Form</title>
+    <link rel="icon" href="logo.png" type="image/icon type">
+    <link rel="stylesheet" href="orderFormCSS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+    <!--OTICO, GABRIEL N.-->
+    <!--4/29/2024-->
+    
+    <div class="logo">
+        <img src="logo.png" alt="" height="400">
+    </div>
+
+    <form action="#" method="POST">
+    <div class="background">
+        <div class="customer-information">
+            <h1>Customer Information</h1>
+        </div>
+
+        <div class="customer-information-contents">
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" maxlength="50" id="name" placeholder="Enter your full name" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><input type="text" maxlength="100" id="address" placeholder="Enter your full address" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" maxlength="50" id="email" placeholder="Enter your E-mail here" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="tel">Contact Number:</label></td>
+                    <td><input type="tel" id="tel" placeholder="Enter your contact number" maxlength="11"
+                    pattern="[0-9]*" title="Please enter only numbers" style="width: 200px;" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="comments">Description of how to get to the place:</label></td>
+                </tr>
+
+                <tr>
+                    <td><textarea id="comments" rows="10" cols="78" style="resize: none; border-radius: 5px;"
+                    required></textarea></td>
+                </tr>
+
+                <tr>
+                    <td><label for="schedule">Date/Time of the Delivery:</label></td>
+                    <td><input type="datetime-local" id="schedule" style="margin-left: -380px; width: 200px;" required>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="background1">
+        <div class="order-information">
+            <h1>Order Form</h1>
+        </div>
+
+        <div class="order-information-contents">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Burger</th>
+                    </tr>
+                    <tr>
+                        <td><img src="burger.png" alt="Burger" title="Burger"></td>
+                    </tr>
+                </thead>
+
+                <tbody class="quantity">
+                    <tr>
+                        <th><label for="qty" title="Quantity">Quantity:</label>
+                            <input type="number" id="qty" min="1" placeholder="1" title="Quantity" required>
+                        </th>  
+                    </tr>
+                </tbody>
+                <tbody class="patty">
+                    <tr>
+                        <th>Choose your Patties:</th>
+                    </tr>
+
+                    <td>
+                        <img src="singlepatty.png" alt="Single Patty" title="Single Patty">
+                        <input type="radio" id="single" name="patty" checked title="Single Patty">
+                        <label for="single" title="Single Patty">Single Patty</label>
+
+                        <img src="doublepatty.png" alt="Double Patty" title="Double Patty">
+                        <input type="radio" id="double" name="patty" title="Double Patty">
+                        <label for="double" title="Double Patty">Double Patty</label>
+                    </td>
+                </tbody>
+
+                <tbody class="burger">
+                    <tr>
+                        <th>Choose your Bun:</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="wheatbun.png" alt="Wheat Bun" title="Wheat Bun">
+                            <input type="radio" id="wheat" name="bun" title="Wheat Bun" checked>
+                            <label for="wheat" title="Wheat Bun">Wheat Bun</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="whitebun.png" alt="White Bun" title="White Bun">
+                            <input type="radio" id="whitebun" name="bun" title="White Bun">
+                            <label for="whitebun" title="White Bun">White Bun</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="honeyoat.png" alt="Honey Oat" title="Honey Oat">
+                            <input type="radio" id="honeyoat" name="bun" title="Honey Oat">
+                            <label for="honeyoat" title="Honey Oat">Honey Oat</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="sugarfree.png" alt="Sugar Free" title="Sugar Free">
+                            <input type="radio" id="sugarfree" name="bun" title="Sugar Free">
+                            <label for="sugarfree" title="Sugar Free">Sugar Free</label>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tbody class="toppings">
+                    <tr>
+                        <th>Choose your Toppings:</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="cheese.png" alt="Cheese" title="Cheese">
+                            <input type="checkbox" id="cheese" name="bun" title="Cheese">
+                            <label for="cheese" title="Cheese">Cheese</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="coleslaw.png" alt="Coleslaw"title="Coleslaw">
+                            <input type="checkbox" id="coleslaw" name="bun" title="Coleslaw">
+                            <label for="coleslaw" title="Coleslaw">Coleslaw</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="tomato.png" alt="Tomato" title="Tomato">
+                            <input type="checkbox" id="tomato" name="bun" title="Tomato">
+                            <label for="tomato" title="Tomato">Tomato</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="onion.png" alt="Onion" title="Onion">
+                            <input type="checkbox" id="onion" name="bun" title="Onion">
+                            <label for="onion" title="Onion">Onion</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <img src="cucumber.png" alt="Cucumber" title="Cucumber">
+                            <input type="checkbox" id="cucumber" name="bun" title="Cucumber">
+                            <label for="cucumber" title="Cucumber">Cucumber</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="bacon.png" alt="Bacon" title="Bacon">
+                            <input type="checkbox" id="bacon" name="bun" title="Bacon">
+                            <label for="bacon" title="Bacon">Bacon</label>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tr>
+                    <td><hr width="745" color="#cf0000;"></td>
+                </tr>
+
+
+                <tbody class="pasta">
+                    <tr>
+                        <th>Pasta</th>
+                    </tr>
+                    <tr>
+                        <td><img src="pasta.png" alt="Pasta" title="Pasta" width="180"></td>
+                    </tr>
+                </tbody>
+
+                <tbody class="quantity">
+                    <tr>
+                        <th><label for="qty1" title="Quantity">Quantity:</label>
+                            <input type="number" id="qty1" min="1" placeholder="1" title="Quantity" required>
+                        </th>  
+                    </tr>
+                </tbody>
+
+                <tbody class="burger">
+                    <tr>
+                        <th>Choose your Sauce:</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="carbonara.png" alt="Carbonara" title="Carbonara">
+                            <input type="radio" id="carbonara" name="pasta" checked title="Carbonara" style="margin-left: -8px;">
+                            <label for="carbonara" title="Carbonara">Carbonara</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="garlicbutter.png" alt="Garlic Butter" title="Garlic Butter">
+                            <input type="radio" id="garlicbutter" name="pasta" title="Garlic Butter">
+                            <label for="garlicbutter" title="Garlic Butter">Garlic Butter</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="pesto.png" alt="Pesto" title="Pesto">
+                            <input type="radio" id="pesto" name="pasta" title="Pesto" style="margin-left: -40px;">
+                            <label for="pesto" title="Pesto">Pesto</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="spaghetti.png" alt="Spaghetti" title="Spaghetti">
+                            <input type="radio" id="spaghetti" name="pasta" title="Spaghetti" style="margin-left: -15px;">
+                            <label for="spaghetti" title="Spaghetti">Spaghetti</label>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tbody class="toppings">
+                    <tr>
+                        <th>Choose your Add-ons:</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="cheese.png" alt="Extra Cheese" title="Extra Cheese">
+                            <input type="checkbox" id="extracheese" name="addons" title="Extra Cheese" style="margin-left: 40px;">
+                            <label for="extracheese" title="Extra Cheese">Extra Cheese</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="extrasauce.png" alt="Extra Sauce"title="Extra Sauce">
+                            <input type="checkbox" id="extrasauce" name="addons" title="Extra Sauce" style="margin-left: 30px;">
+                            <label for="extrasauce" title="Extra Sauce">Extra Sauce</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="extraseasonings.png" alt="Extra Seasonings"title="Extra Seasonings">
+                            <input type="checkbox" id="extraseasonings" name="addons" title="Extra Seasonings" style="margin-left: 50px;">
+                            <label for="extraseasonings" title="Extra Seasonings">Extra Seasonings</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="extravegetables.png" alt="Extra Vegetables"title="Extra Vegetables">
+                            <input type="checkbox" id="extravegetables" name="addons" title="Extra Vegetables" style="margin-left: 50px;">
+                            <label for="extravegetables" title="Extra Vegetables">Extra Vegetables</label>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tr>
+                    <td><hr width="745" color="#cf0000;"></td>
+                </tr>
+                
+                <tbody class="fries">
+                    <tr>
+                        <th>Fries</th>
+                    </tr>
+                    <tr>
+                        <td><img src="fries.png" alt="Pasta" title="Fries" width="180"></td>
+                    </tr>
+                </tbody>
+
+                <tbody class="fries-quantity">
+                    <tr>
+                        <th>
+                            <label for="size" title="Size">Size:</label>
+                            <select name="size" id="size" size="1" title="Size">
+                                <option value="Small">Small</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Large">Large</option>
+                            </select>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <label for="flavor" title="Flavor">Flavor:</label>
+                            <select name="flavor" id="flavor" size="1" title="Flavor">
+                                <option value="BBQ">BBQ</option>
+                                <option value="Cheese">Cheese</option>
+                                <option value="Sour Cream">Sour Cream</option>
+                            </select>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <label for="qty2" title="Quantity">Quantity: &nbsp;</label>
+                            <input type="number" id="qty2" min="1" placeholder="1" title="Quantity" required>
+                        </th>  
+                    </tr>
+                </tbody>
+
+                <tbody class="drinks">
+                    <tr>
+                        <th>Drinks</th>
+                    </tr>
+                    <tr>
+                        <td><img src="drinks.png" alt="Drinks" title="Drinks" width="180" height="180"></td>
+                    </tr>
+                </tbody>
+
+                <tbody class="drinks-quantity">
+                    <tr>
+                        <th>
+                            <label for="size1" title="Size">Size:</label>
+                            <select name="size1" id="size1" size="1" title="Size">
+                                <option value="Small">Small</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Large">Large</option>
+                            </select>
+                        </th>
+                    </tr>
+                    
+                    <tr>
+                        <th>
+                            <label for="type" style="padding-left: 10px;" title="Type">Type:</label>
+                            <select name="fltypeavor" id="type" size="1" title="Type">
+                                <option value="Coke">Coke</option>
+                                <option value="Iced Tea">Iced Tea</option>
+                                <option value="Royal">Royal</option>
+                                <option value="Sprite">Sprite</option>
+                            </select>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th><label for="qty3" title="Quantity" style="padding-left: 12px;" title="Quantity">Quantity:</label>
+                            <input type="number" id="qty3" min="1" placeholder="1" title="Quantity" required>
+                        </th>  
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+    <div class="background2">
+        <div class="customer-information">
+            <h1>Give us your Feedback!</h1>
+        </div>
+
+        <div class="customer-information-contents">
+            <table>
+                <tr>
+                    <td><label for="fillup">Help us to improve by filling up the form:</label></td>
+                </tr>
+
+                <tr>
+                    <td><textarea id="fillup" rows="10" cols="78"style="resize: none; border-radius: 5px;"
+                    required></textarea></td>
+                </tr>
+
+                <tr>
+                    <td><label for="payment">Proof of Payment:</label></td>
+                    <td><input type="file" id="payment" name="payment" accept="image/png" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="times">Rate our Service (1-10):</label></td>
+                    <td><input type="range" id="times" min="1" max="10" style="width: 190px; margin-left: -380px;"></td>
+                </tr>
+                
+                <tr>
+                    <td>Delivery Type:</td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <input type="radio" id="delivery" name="bun" title="Delivery" style="margin-left: -190px;">
+                        <label for="delivery" title="Delivery" style="margin-left: -200px;">Delivery</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="radio" id="pickup" name="bun" title="Pick-up" style="margin-left: -190px;">
+                        <label for="pickup" title="Pick-up" style="margin-left: -200px;">Pick-up</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input type="submit" value="Submit" style="width: 70px; margin-left: 200px; background-color: rgb(18, 189, 75); font-weight: bold; cursor: pointer; color: white;" title="Submit"></td>
+                    <td><input type="reset" value="Reset" style="width: 70px; margin-left: -290px; font-weight: bold; cursor: pointer; background-color: white;" title="Reset"></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    </form>
+
+
+    <footer>
+        <div class="gotop">
+            <a href="#top">
+              <img src="top.png" alt="Go to top" width="75px">
+            </a>
+          </div>
+    </footer>
+
+</body>
+
+</html>
